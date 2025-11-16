@@ -1,31 +1,32 @@
 # MERN Stack Intern Assessment: Movie Review Aggregator
 
+This repository contains my implementation of a Movie Review Aggregator built with the MERN stack.
+
 ## Setup & Run (Windows PowerShell)
 
 ### Backend
 
-1. Open a terminal and install dependencies:
+From the project root I install backend dependencies and start the server:
 
 ```powershell
 cd backend
 npm install
 ```
 
-
-2. Start the backend server (development):
+To run the backend in development I use:
 
 ```powershell
-# uses nodemon if installed in dev dependencies
-nodemon index.js
-# or
+# if you have nodemon globally or in devDependencies
+npm run dev
+# or fallback to
 npm run run
 ```
 
-The backend will listen on the port specified in `PORT` (default `3001`).
+The backend listens on the port defined in `PORT` in `backend/.env` (I used `3001` during development).
 
 ### Client
 
-1. Install client dependencies and run:
+To run the frontend locally I install dependencies and start Vite:
 
 ```powershell
 cd client
@@ -33,23 +34,9 @@ npm install
 npm run dev
 ```
 
-2. Open the dev server URL shown by Vite (usually `http://localhost:5173`).
+Then I open the dev URL that Vite prints (typically `http://localhost:5173`).
 
 ---
 
-## Notes on Implementation
-
-- Backend aggregation: implement an endpoint such as `GET /api/movies/with-ratings` that uses a pipeline to join `reviews` and compute average rating and review count per movie.
-- Frontend lazy loading: use `React.lazy()`
-- Review POST: send `POST /api/movies/:id/reviews` with `{ user, rating, comment }` and update the UI after success.
-
----
-
-## Project Structure (expected)
-
-- `backend/`: Express app, models, controllers, routes, `seeds/` for test data.
-- `client/`: React app (Vite), pages, components, and store.
-
----
-
+If you want me to add more project notes, API examples, or a separate `backend/README.md` and `client/README.md`, I can create those next.
 
