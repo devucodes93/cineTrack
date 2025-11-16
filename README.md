@@ -52,7 +52,3 @@ npm run dev
 ```
 
 2. The frontend uses a default backend URL of `http://localhost:3001/api/`.
-
-```
-
-```
