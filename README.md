@@ -9,8 +9,8 @@ A simple full-stack **MERN** application to manage movies and user reviews with 
 1. Clone the repo and open the project directory:
 
 ```powershell
-git clone https://github.com/your-username/movie-review-aggregator.git
-cd movie-review-aggregator
+git clone https://github.com/devucodes93/cineTrack.git
+
 ```
 
 2. Start backend and frontend in separate terminals (detailed steps below).
